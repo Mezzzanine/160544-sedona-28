@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Sergey Levkov](https://up.htmlacademy.ru/htmlcss/28/user/160544).
-* Наставник: `Неизвестно`.
+* Наставник: [Анна Лисененкова](https://htmlacademy.ru/profile/ankhena).
 
 ---
 
