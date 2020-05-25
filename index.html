@@ -22,13 +22,13 @@
       </nav>
     </header>
     <main>
-      <h1>Седона - место которое стоит посетить</h1>
+      <h1 class="visually-hidden">Седона - место которое стоит посетить</h1>
       <section>
-        <h2>Баннер</h2>
+        <h2 class="visually-hidden">Баннер</h2>
         <img src="img/main-banner.jpg" width="1200" height="510" alt="Добро пожаловать в великолепную Sedona! Потому, что Grand Canyon - отстой!">
       </section>
       <section>
-        <h2>Выгода</h2>
+        <h2 class="visually-hidden">Выгода</h2>
         <p>Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
         <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
         <ul>
@@ -52,44 +52,68 @@
             </ul>
           </li>
           <li>
-            <h3>Там есть Мост дьявола</h3>
+            <h3>Там есть мост дьявола</h3>
             <p>— №2 —</p>
             <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
           </li>
           <li>
-            <h3>небольшая площадь</h3>
+            <h3>Небольшая площадь</h3>
             <p>— №3 —</p>
             <p>все достопримечательности находятся очень близко</p>
           </li>
           <li>
-            <h3>красивая дорога</h3>
+            <h3>Красивая дорога</h3>
             <p>— №4 —</p>
             <p>ехать в седону из лас-вегаса совсем не скучно!</p>
           </li>
           <li>
-            <h3>мало туристов</h3>
+            <h3>Мало туристов</h3>
             <p>— №5 —</p>
             <p>большинство едет в гранд каньон и толпится там</p>
           </li>
         </ul>
       </section>
       <section>
-        <h2>Поиск гостиницы в Седоне</h2>
+        <h2 class="visually-hidden">Поиск гостиницы в Седоне</h2>
         <p>Заинтересовались? Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
+        <form action="https://echo.htmlacademy.ru" method="post">
+          <fieldset>
+            <legend>Поиск гостиницы в Седоне</legend>
+            <p>
+              <label for="field-date-in">Дата заезда:</label>
+              <input type="text" name="date-in" id="field-date-in" placeholder="24 апреля 2017" required>
+            </p>
+            <p>
+              <label for="field-date-out">Дата выезда:</label>
+              <input type="text" name="date-out" id="field-date-out" placeholder="4 июля 2017" required>
+            </p>
+            <p>
+              <lebel for="field-amount-of-addults">Взрослые:</lebel>
+              <input type="number" min="0" name="amount-of-addults" id="field-amount-of-adults" value="2" required>
+            </p>
+            <p>
+              <lebel for="field-amount-of-kids">Дети:</lebel>
+              <input type="number" min="0" name="amount-of-kids" id="field-amount-of-kids" value="0" required>
+            </p>
+            <p>
+              <button type="submit">Найти</button>
+            </p>
+          </fieldset>
+        </form>
         <!-- Здесь будет форма поиска-->
       </section>
       <section>
-        <h2>Карта</h2>
+        <h2 class="visually-hidden">Карта</h2>
       </section>
     </main>
     <footer>
       <section>
-        <h2>Контактные данные</h2>
+        <h2 class="visually-hidden">Контактные данные</h2>
         <p>#visitSEDONA</p>
         <p>ТЕЛ: +7(495) 666-01-66</p>
       </section>
       <section>
-        <h2>Социальные сети</h2>
+        <h2 class="visually-hidden">Социальные сети</h2>
         <ul>
           <li>
             <a href="#" target="_blank">Twitter</a>
