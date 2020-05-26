@@ -22,10 +22,52 @@
             </nav>
         </header>
         <main>
-            <h1 class="visually-hidden">Бронирование гостиницы в Седоне</h1>
+            <h1 class="visually_hidden">Бронирование гостиницы в Седоне</h1>
             <section>
-                <h2 class="visually-hidden">Фильтр</h2>
-                <!--Тут будут формы фильтра-->
+                <h2 class="visually_hidden">Фильтр</h2>
+                <form oninput="output_price_from.value=range_price_from.value" action="https://echo.htmlacademy.ru" method="GET">
+                  <fieldset>
+                    <legend>Инфраструктура</legend>
+                    <ul>
+                      <li>
+                        <input type="checkbox" name="pool" id="filter_pool" checked>
+                        <label for="filter_pool">Бассейн</label>
+                      </li>
+                      <li>
+                        <input type="checkbox" name="parking" id="filter_parking">
+                        <label for="filter_parking">Парковка</label>
+                      </li>
+                      <li>
+                        <input type="checkbox" name="wifi" id="filter_wifi">
+                        <label for="filter_wifi">Wi-Fi</label>
+                      </li>
+                    </ul>
+                  </fieldset>
+                  <fieldset>
+                    <legend>Тип жилья</legend>
+                    <ul>
+                      <li>
+                        <input type="checkbox" name="hotel" id="filter_hotel" checked>
+                        <label for="filter_pool">Гостиница</label>
+                      </li>
+                      <li>
+                        <input type="checkbox" name="motel" id="filter_motel">
+                        <label for="filter_motel">Мотель</label>
+                      </li>
+                      <li>
+                        <input type="checkbox" name="appart" id="filter_appart">
+                        <label for="filter_appart">Апартаменты</label>
+                      </li>
+                    </ul>
+                  </fieldset>
+                  <fieldset>
+                    <legend>Стоимость в сутки (Р):</legend>
+                    <p>От <output name="output_price_from">0</output></p>
+                    <input type="range" name="price" id="range_price_from" min="0" max="5000" step="10" value="0">
+                    <p>До 3000</p>
+                  </fieldset>
+                  <button type="submit">Показать</button>
+                </form>
             </section>
             <section>
                 <h2>Сортировка</h2>
@@ -39,7 +81,7 @@
                 </ul>
             </section>
             <section>
-                <h2 class="visually-hidden">Результаты работы фильтра</h2>
+                <h2 class="visually_hidden">Результаты работы фильтра</h2>
                 <ul>
                     <li>
                         <a href="#">
@@ -82,12 +124,12 @@
         </main>
         <footer>
             <section>
-              <h2 class="visually-hidden">Контактные данные</h2>
+              <h2 class="visually_hidden">Контактные данные</h2>
               <p>#visitSEDONA</p>
               <p>ТЕЛ: +7(495) 666-01-66</p>
             </section>
             <section>
-              <h2 class="visually-hidden">Социальные сети</h2>
+              <h2 class="visually_hidden">Социальные сети</h2>
               <ul>
                 <li>
                   <a href="#" target="_blank">Twitter</a>
