@@ -22,10 +22,10 @@
       </nav>
     </header>
     <main>
-      <h1 class="visually_hidden">Седона - место которое стоит посетить</h1>
+      <h1 class="visually_hidden">Туризм в Седоне. Причины посетить, бронирование отелей.</h1>
       <section>
-        <h2 class="visually_hidden">Баннер</h2>
-        <img src="img/main-banner.jpg" width="1200" height="510" alt="Добро пожаловать в великолепную Sedona! Потому, что Grand Canyon _ отстой!">
+        <h2 class="visually_hidden">Добро пожаловать в великолепную Седону!</h2>
+        <img src="img/main-banner.jpg" width="1200" height="510" alt="Добро пожаловать в великолепную Седону! Мы лучше чем Гранд Каньон!">
       </section>
       <section>
         <h2 class="visually_hidden">Выгода</h2>
@@ -76,31 +76,34 @@
       <section>
         <h2 class="visually_hidden">Поиск гостиницы в Седоне</h2>
         <p>Заинтересовались? Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
+        <button type="button">Поиск гостиницы в Седоне</button>
         <form action="https://echo.htmlacademy.ru" method="post">
-          <fieldset>
-            <legend>Поиск гостиницы в Седоне</legend>
             <p>
               <label for="field_date_in">Дата заезда:</label>
               <input type="text" name="date_in" id="field_date_in" placeholder="24 апреля 2017" required>
+              <button type="button" name="calendar" id="button_calendar_date_in">Календарь</button>
             </p>
             <p>
               <label for="field_date_out">Дата выезда:</label>
               <input type="text" name="date_out" id="field_date_out" placeholder="4 июля 2017" required>
+              <button type="button" name="calendar" id="button_calendar_date_out">Календарь</button>
             </p>
             <p>
-              <lebel for="field_amount_of_addults">Взрослые:</lebel>
-              <input type="number" min="0" name="amount_of_addults" id="field_amount_of_adults" value="2" required>
+              <label for="field_amount_of_addults">Взрослые:</label>
+              <input type="text" name="amount_of_addults" id="field_amount_of_addults" value="2" required>
+              <button type="button" name="button_addults_less">-</button>
+              <button type="button" name="button_addults_more">+</button>
             </p>
             <p>
-              <lebel for="field_amount_of_kids">Дети:</lebel>
-              <input type="number" min="0" name="amount_of_kids" id="field_amount_of_kids" value="0" required>
+              <label for="field_amount_of_kids">Дети:</label>
+              <input type="text" name="amount_of_kids" id="field_amount_of_kids" value="0" required>
+              <button type="button" name="button_kids_less">-</button>
+              <button type="button" name="button_kids_more">+</button>
             </p>
             <p>
               <button type="submit">Найти</button>
             </p>
-          </fieldset>
         </form>
-        <!-- Здесь будет форма поиска-->
       </section>
       <section>
         <h2 class="visually_hidden">Карта</h2>
